@@ -952,7 +952,10 @@
     .hero-content { padding: 0 24px; }
     .hero-stats { display: none; }
     .services, .why, .testimonials, .projects, .cta-banner, .contact { padding: 60px 24px; }
+    section[style*="padding: 100px 80px"] { padding: 60px 24px !important; }
     .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
+    div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+    div[style*="grid-template-columns: repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
     .why, .contact { grid-template-columns: 1fr; gap: 40px; }
     .projects-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
     .project-tile:first-child { grid-row: auto; }
